@@ -13,4 +13,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Imprimir nombre y apellidos
-        run: echo "Nombre y apellidos: ${{ github.event.inputs.nombre_apellidos }}"
+        run: |
+          echo "Nombre y apellidos: ${{ github.event.inputs.nombre_apellidos }}"
